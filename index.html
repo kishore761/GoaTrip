@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Goa Trip Registration</title>
+</head>
+
+<body>
+
+<h2>Goa Trip Registration</h2>
+
+<form method="POST">
+
+<input type="text" name="name" placeholder="Enter Name">
+
+<br><br>
+
+<input type="text" name="phone" placeholder="Phone Number">
+
+<br><br>
+
+<input type="text" name="place" placeholder="Place">
+
+<br><br>
+
+<input type="number" name="members" placeholder="Members Count">
+
+<br><br>
+
+<button type="submit">
+Register
+</button>
+
+</form>
+20:14 27-05-2026
+<hr>
+
+<h3>Registered Members</h3>
+
+{% for person in registrations %}
+
+<p>
+Name : {{ person.name }}
+</p>
+
+<p>
+Phone : {{ person.phone }}
+</p>
+
+<p>
+Place : {{ person.place }}
+</p>
+
+<p>
+Members : {{ person.members }}
+</p>
+
+<hr>
+
+{% endfor %}
+
+</body>
+</html>20:13 27-05-2026
